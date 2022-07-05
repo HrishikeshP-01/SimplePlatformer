@@ -25,5 +25,11 @@ public:
 
 protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		FVector myVector = FVector(1, 2, 3);
+		FVector velocity = FVector(100, 0, 0);
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		float distance = 100;
+	UPROPERTY(VisibleAnywhere)
+		FVector StartLocation;
+	UPROPERTY(VisibleAnywhere)
+		FVector CurrentLocation;
 };
